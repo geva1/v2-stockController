@@ -1,27 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      ARTE E TRICO
-    </ion-title>
-    <ion-tabs>
+    <ion-toolbar>
+        <ion-title>
+            ARTE E TRICO
+        </ion-title>
 
-      <ion-tab-bar>
-      <ion-tab-button tab="estoque">
-        <ion-label>Estoque</ion-label>
-      </ion-tab-button>
-        <ion-tab-button tab="vendas">
-          <ion-label>Vendas</ion-label>
-        </ion-tab-button>
-        <ion-tab-button tab="clientes">
-          <ion-label>Clientes</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
+    </ion-toolbar>
 </ion-header>
 
 
-
 <ion-content padding>
+    <ion-tabs>
+        <ion-tab [root]="tab1Root" tabTitle="estoque"></ion-tab>
+        <ion-tab [root]="tab2Root" tabTitle="vendas"></ion-tab>
+        <ion-tab [root]="tab3Root" tabTitle="cliente"></ion-tab>
+
+    </ion-tabs>
 
 </ion-content>
